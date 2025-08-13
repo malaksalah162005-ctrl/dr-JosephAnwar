@@ -1,0 +1,93 @@
+:root{
+--bg:#EDE9E8; 
+--card:#ffffff;
+--accent:#4E4B4B; 
+--muted:black;
+}
+*{
+    box-sizing:border-box;
+    font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    margin:0;
+    padding:0;
+}
+body{
+    background:var(--bg);
+    color:#111
+}
+.container{
+    max-width:960px;
+    margin:36px auto;
+    padding:20px
+}
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px}
+.brand{display:flex;
+    align-items:center;
+    gap:12px}
+.logo{width:56px;
+    height:56px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#EDE9E8,#8A5555);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#EDE9E8;
+    font-weight:700}
+h1{font-size:20px;
+    margin:0}
+p.lead{margin:6px 0 0;
+    color:var(--muted)}
+.grid{display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:16px;
+    margin-top:20px}
+.card{background:var(--card);
+    padding:16px;border-radius:12px;
+    box-shadow:0 6px 18px rgba(2,6,23,0.06);
+    display:flex;
+    flex-direction:column;
+    gap:12px}
+.branch-name{font-size:16px;font-weight:600 }
+.branch-meta{color:var(--muted);font-size:14px}
+.actions{margin-top:auto;display:flex;gap:8px}
+.btn{padding:10px 12px;border-radius:10px;border:0;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.btn-primary{background:var(--accent);color:white}
+.btn-ghost{background:transparent;border:1px solid #e6e9ef}
+.btn{
+    background:var(--accent);color:white
+}
+footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+.small{font-size:13px;color:var(--muted)}
+@media (max-width:420px){.logo{width:48px;height:48px}}
+.branches-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.column h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+}
+.header-logo {
+  max-width: 80px;
+  height: auto;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+.top-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
